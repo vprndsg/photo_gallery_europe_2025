@@ -73,3 +73,24 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Apply item-like styles to direct children of .gallery */
+.gallery > img {
+  break-inside: avoid;
+  margin-bottom: var(--gap);
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  transition: transform 0.25s ease;
+}
+
+.gallery > div {
+  /* style narration blocks */
+  break-inside: avoid;
+  margin-bottom: var(--gap);
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
